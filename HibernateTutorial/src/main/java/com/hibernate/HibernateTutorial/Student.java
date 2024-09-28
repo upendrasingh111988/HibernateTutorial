@@ -11,9 +11,19 @@ public class Student {
 	
 	private String name;
 	private String city;
+	private Certificate certificate;
 	public Student() {
 		
 	}
+	
+	public Certificate getCertificate() {
+		return certificate;
+	}
+
+	public void setCertificate(Certificate certificate) {
+		this.certificate = certificate;
+	}
+
 	public int getStudentId() {
 		return studentId;
 	}
@@ -32,10 +42,13 @@ public class Student {
 	public void setCity(String city) {
 		this.city = city;
 	}
+
 	@Override
 	public String toString() {
-		return "Student [studentId=" + studentId + ", name=" + name + ", city=" + city + "]";
+		return "Student [studentId=" + studentId + ", name=" + name + ", city=" + city + ", certificate=" + certificate
+				+ "]";
 	}
+	
 	
 
 }

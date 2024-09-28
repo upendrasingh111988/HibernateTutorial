@@ -10,9 +10,11 @@
       <property name="connection.username">root</property>  
       <property name="connection.password">Upen@1988</property>  
       <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-      <property name="hbm2ddl.auto">update</property>
+      <property name="hbm2ddl.auto">create</property>
       <property name="show_sql">true</property>
       <mapping class="com.hibernate.HibernateTutorial.Student" />
       <mapping class="com.hibernate.HibernateTutorial.Address" />
+      <mapping class="com.mapping.Question" />
+      <mapping class="com.mapping.Answer" />
    </session-factory>  
 </hibernate-configuration>
